@@ -202,7 +202,13 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(input,  a):
-	return ""
+    output = ""
+    if(len(input) == a):
+            return ""
+    lengthnew = len(input)-a
+    notmid = lengthnew/2
+    output += input[:int(notmid)] + input[-int(notmid):]
+    return output
 
 	# <QUESTION 9>
 
